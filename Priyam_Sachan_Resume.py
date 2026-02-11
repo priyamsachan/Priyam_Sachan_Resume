@@ -200,4 +200,4 @@ with c2:
     * ✅ **MS Fabric Analytics Engineer Associate (DP-600)**
     """)
 
-st.markdown("<br><center style='opacity:0.4;'>Built with Streamlit • 2026 Portfolio</center>", unsafe_allow_html=True)
+st.markdown("<br><center style='opacity:0.4;'>Built with ❤️ • 2026 Portfolio</center>", unsafe_allow_html=True)
