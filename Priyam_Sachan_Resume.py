@@ -83,7 +83,7 @@ st.markdown("""
 
 # --- SIDEBAR ---
 with st.sidebar:
-    st.image("https://www.bing.com/images/search?view=detailV2&ccid=WE3auTPZ&id=BEBE77C72DF14C41FBB28E33A3E3ED62362E0411&thid=OIP.WE3auTPZC4reMiBqsDnZvAAAAA&mediaurl=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F72080208%3Fv%3D4%3Fs%3D400&exph=460&expw=460&q=priyam+sachan&FORM=IRPRST&ck=2782CD16A6E6E5E1EF7C1D23C4A2AD2E&selectedIndex=0&itb=0&cw=1375&ch=659&ajaxhist=0&ajaxserp=0", width=120)
+    st.image("Priyam.jpeg", width=120)
     st.title("Priyam Sachan")
     st.write("📞 [+91 8840750905](tel:+918840750905)")
     st.write("📧 [priyamsachan12051997@gmail.com](mailto:priyamsachan12051997@gmail.com)")
