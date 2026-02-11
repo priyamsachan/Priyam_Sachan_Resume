@@ -185,22 +185,22 @@ c1, c2 = st.columns(2)
 with c1:
     st.write("## 🎓 Education")
     st.markdown(f"""
-    **B.Tech in Mechanical Engineering** [cite: 38]  
-    Medi-caps University (2016-2020) | **CGPA: 7.95** [cite: 38, 45]
+    **B.Tech in Mechanical Engineering** 
+    Medi-caps University (2016-2020) | **CGPA: 7.95**
     
-    - **Higher Secondary:** 78.9% [cite: 39]
-    - **Secondary:** CGPA: 9.4 [cite: 40]
+    - **Higher Secondary:** 78.9%
+    - **Secondary:** CGPA: 9.4 
     """)
 
 with c2:
     st.write("## 🏆 Certifications")
     st.markdown("""
     * ✅ **Snow Pro Core Certified** [cite: 42]
-    * ✅ **Databricks Certified Data Engineer Associate** [cite: 43]
-    * ✅ **MS Fabric Data Engineer Associate (DP-700)** [cite: 44]
-    * ✅ **MS Power BI Data Analyst (PL-300)** [cite: 48]
-    * ✅ **MS Data Engineering on Azure (DP-203)** [cite: 49]
-    * ✅ **MS Fabric Analytics Engineer Associate (DP-600)** [cite: 50]
+    * ✅ **Databricks Certified Data Engineer Associate**
+    * ✅ **MS Fabric Data Engineer Associate (DP-700)**
+    * ✅ **MS Power BI Data Analyst (PL-300)** 
+    * ✅ **MS Data Engineering on Azure (DP-203)** 
+    * ✅ MS Fabric Analytics Engineer Associate (DP-600)
     """)
 
 st.markdown("<br><center style='opacity:0.4;'>Built with Streamlit • 2026 Portfolio</center>", unsafe_allow_html=True)
