@@ -91,9 +91,7 @@ with st.sidebar:
     
     st.divider()
     st.write("## 💡 Leadership")
-    st.markdown("""
-    Strategic Thinking • Mentorship • Technical Collaboration
-    """)
+    st.markdown("### Strategic Thinking • Mentorship • Technical Collaboration")
     
     st.divider()
     st.download_button("📂 Get Official Resume", "PDF_DATA", file_name="Priyam_Sachan_Resume.pdf", use_container_width=True)
@@ -135,11 +133,11 @@ st.markdown(f"""
     <div class="date-tag">JAN 2025 — PRESENT</div>
     <br>
     <ul>
-        <li><b>Cloud Migration:</b> Architected complete migration from on-prem Oracle to AWS Cloud[cite: 15].</li>
-        <li><b>Orchestration:</b> Deployed incremental ETL using Apache Nifi for unified transaction event ingestion[cite: 16].</li>
-        <li><b>Data Processing:</b> Developed Python/Scala Databricks notebooks for Parquet optimization in S3 (Bronze)[cite: 17, 21].</li>
-        <li><b>Architecture:</b> Established Medallion Data Architecture (Bronze/Silver/Gold) to ensure high data quality[cite: 18, 19].</li>
-        <li><b>Modeling:</b> Constructed Canonical Data Models (CDM) in the Gold layer for Fact/Dimension analytical reporting[cite: 20].</li>
+        <li><b>Cloud Migration:</b> Architected complete migration from on-prem Oracle to AWS Cloud.</li>
+        <li><b>Orchestration:</b> Deployed incremental ETL using Apache Nifi for unified transaction event ingestion.</li>
+        <li><b>Data Processing:</b> Developed Python/Scala Databricks notebooks for Parquet optimization in S3 (Bronze).</li>
+        <li><b>Architecture:</b> Established Medallion Data Architecture (Bronze/Silver/Gold) to ensure high data quality.</li>
+        <li><b>Modeling:</b> Constructed Canonical Data Models (CDM) in the Gold layer for Fact/Dimension analytical reporting.</li>
     </ul>
 </div>
 """, unsafe_allow_html=True)
@@ -154,10 +152,10 @@ st.markdown(f"""
     <div class="date-tag">NOV 2023 — JAN 2025</div>
     <br>
     <ul>
-        <li><b>Data Warehousing:</b> Implemented Snowflake solutions for structured (CSV) and semi-structured (JSON, XML) formats[cite: 24].</li>
-        <li><b>Automation:</b> Developed high-efficiency pipelines using Snowpipe and External Integration for auto-ingestion[cite: 25].</li>
-        <li><b>Transformation:</b> Authored advanced SQL for schema creation and metadata management[cite: 26].</li>
-        <li><b>Supply Chain:</b> Delivered Power BI reporting for tracking key US FMCG client metrics[cite: 28].</li>
+        <li><b>Data Warehousing:</b> Implemented Snowflake solutions for structured (CSV) and semi-structured (JSON, XML) formats.</li>
+        <li><b>Automation:</b> Developed high-efficiency pipelines using Snowpipe and External Integration for auto-ingestion.</li>
+        <li><b>Transformation:</b> Authored advanced SQL for schema creation and metadata management.</li>
+        <li><b>Supply Chain:</b> Delivered Power BI reporting for tracking key US FMCG client metrics.</li>
     </ul>
 </div>
 """, unsafe_allow_html=True)
@@ -172,8 +170,8 @@ st.markdown(f"""
     <ul>
         <li><b>ERP Migration:</b> Deployed ADF CDC pipelines for SAP migration, reducing ETL cycle time by 30%.</li>
         <li><b>FinOps:</b> Created Analytics Dashboards using Azure Monitor APIs to support cost governance.</li>
-        <li><b>Optimization:</b> Enhanced Synapse workflows with PySpark/SQL for finance and compliance operations[cite: 32].</li>
-        <li><b>Retail Analytics:</b> Designed competitor insight dashboards for European retail clients using SQL and Power BI[cite: 36].</li>
+        <li><b>Optimization:</b> Enhanced Synapse workflows with PySpark/SQL for finance and compliance operations.</li>
+        <li><b>Retail Analytics:</b> Designed competitor insight dashboards for European retail clients using SQL and Power BI.</li>
     </ul>
 </div>
 """, unsafe_allow_html=True)
@@ -195,12 +193,12 @@ with c1:
 with c2:
     st.write("## 🏆 Certifications")
     st.markdown("""
-    * ✅ **Snow Pro Core Certified** [cite: 42]
+    * ✅ **Snow Pro Core Certified**
     * ✅ **Databricks Certified Data Engineer Associate**
     * ✅ **MS Fabric Data Engineer Associate (DP-700)**
     * ✅ **MS Power BI Data Analyst (PL-300)** 
     * ✅ **MS Data Engineering on Azure (DP-203)** 
-    * ✅ MS Fabric Analytics Engineer Associate (DP-600)
+    * ✅ **MS Fabric Analytics Engineer Associate (DP-600)**
     """)
 
 st.markdown("<br><center style='opacity:0.4;'>Built with Streamlit • 2026 Portfolio</center>", unsafe_allow_html=True)
