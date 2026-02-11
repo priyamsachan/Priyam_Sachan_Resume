@@ -75,7 +75,7 @@ st.markdown("""
     
     /* Custom Sidebar */
     [data-testid="stSidebar"] {
-        background-color: #0b0f19;
+        background-color: #94a3b8;
         border-right: 1px solid rgba(255, 255, 255, 0.05);
     }
     </style>
@@ -90,7 +90,7 @@ with st.sidebar:
     st.write("🔗 [LinkedIn Profile](https://linkedin.com/in/priyam-sachan)")
     
     st.divider()
-    st.markdown("###💡 Leadership")
+    st.markdown("💡 Leadership")
     st.caption("Strategic Thinking • Mentorship • Technical Collaboration")
     
     st.divider()
