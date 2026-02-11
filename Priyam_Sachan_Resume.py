@@ -91,7 +91,9 @@ with st.sidebar:
     
     st.divider()
     st.write("## 💡 Leadership")
-    st.caption("Strategic Thinking • Mentorship • Technical Collaboration")
+    st.markdown("""
+    Strategic Thinking • Mentorship • Technical Collaboration
+    """)
     
     st.divider()
     st.download_button("📂 Get Official Resume", "PDF_DATA", file_name="Priyam_Sachan_Resume.pdf", use_container_width=True)
