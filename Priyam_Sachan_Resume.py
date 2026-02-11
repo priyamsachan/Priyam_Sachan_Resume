@@ -1,104 +1,132 @@
 import streamlit as st
 
-# 1. Page Config (Must be the first Streamlit command)
+# 1. Page Config
 st.set_page_config(
-    page_title="Priyam Sachan | Portfolio",
+    page_title="Priyam Sachan | Data Engineer Portfolio",
     page_icon="📊",
     layout="wide"
 )
 
-# 2. Advanced CSS for Background and Styling
+# 2. Robust CSS for Background and Glassmorphism
 st.markdown("""
     <style>
-    /* Main background gradient */
+    /* Gradient Background */
     .stApp {
-        background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
-        color: white;
+        background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #334155 100%);
+        color: #e2e8f0;
     }
     
-    /* Card-like containers for content */
-    div.stExpander, div[data-testid="stVerticalBlock"] > div {
-        background-color: rgba(255, 255, 255, 0.05);
-        border-radius: 15px;
-        padding: 10px;
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+    /* Card Styling */
+    div.stExpander {
+        background-color: rgba(255, 255, 255, 0.05) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 10px !important;
+        margin-bottom: 10px;
     }
 
-    /* Customizing Headings */
+    /* Custom Header Colors */
     h1, h2, h3 {
-        color: #ffffff !important;
-        font-weight: 700 !important;
+        color: #60a5fa !important;
     }
-    
-    /* Divider color */
-    hr {
-        border-top: 2px solid rgba(255, 255, 255, 0.2);
+
+    /* Text color fix for clarity */
+    .stMarkdown p {
+        color: #cbd5e1;
     }
-    
-    /* Links */
-    a {
-        color: #93c5fd !important;
-        text-decoration: none;
+
+    /* Sidebar color */
+    section[data-testid="stSidebar"] {
+        background-color: rgba(15, 23, 42, 0.8);
     }
     </style>
     """, unsafe_allow_html=True)
 
-# --- HEADER ---
+# --- SIDEBAR ---
+with st.sidebar:
+    st.image("https://cdn-icons-png.flaticon.com/512/1055/1055644.png", width=100)
+    st.title("Contact Me")
+    st.write("📧 [priyamsachan12051997@gmail.com](mailto:priyamsachan12051997@gmail.com)")
+    st.write("📞 +91 8840750905")
+    st.write("🔗 [LinkedIn](https://linkedin.com/in/priyam-sachan)")
+    st.divider()
+    st.info("Available for Data Engineering opportunities.")
+
+# --- MAIN CONTENT ---
 col1, col2 = st.columns([3, 1])
+
 with col1:
     st.title("PRIYAM SACHAN")
     st.subheader("Senior Data Engineer")
-    st.write("📍 Pune, India")
-    st.markdown("🔗 [LinkedIn](https://linkedin.com/in/priyam-sachan) | 📧 [priyamsachan12051997@gmail.com](mailto:priyamsachan12051997@gmail.com)")
+    st.write("Expertise in Cloud Migration, Big Data ETL, and Medallion Architectures.")
 
-with col2:
-    st.write("### Contact")
-    st.write("📞 +91 8840750905")
+# --- SKILLS SECTION ---
+st.header("🛠️ Technical Expertise")
+s1, s2, s3 = st.columns(3)
 
-st.divider()
+with s1:
+    st.markdown("### Languages")
+    st.write("Python, SQL, PySpark, Scala")
+    st.markdown("### Databases")
+    st.write("MySQL, SQL Server, CosmosDB, S3, ADLS")
 
-# --- TECHNICAL SKILLS ---
-st.header("🛠️ Technical Stack")
-c1, c2, c3 = st.columns(3)
+with s2:
+    st.markdown("### Cloud & Big Data")
+    st.write("Azure (ADF, Databricks, Synapse, Fabric), Snowflake, Snowpark, AWS")
 
-with c1:
-    st.markdown("#### Languages & Core")
-    st.write("- Python, SQL, PySpark\n- Spark, Scala\n- Pandas, NumPy")
-
-with c2:
-    st.markdown("#### Cloud & Data")
-    st.write("- Azure (ADF, Databricks, Synapse)\n- Snowflake, MS Fabric\n- AWS S3, Apache Nifi")
-
-with c3:
-    st.markdown("#### BI & Utilities")
-    st.write("- Power BI, Data Modeling\n- Git, JIRA, Postman\n- Generative AI & Copilot")
+with s3:
+    st.markdown("### BI & Tools")
+    st.write("Power BI, Git, JIRA, Generative AI, Prompt Engineering")
 
 st.divider()
 
 # --- WORK EXPERIENCE ---
-st.header("💼 Work Experience")
+st.header("💼 Professional Experience")
 
 # Mastercard
-with st.expander("🔹 Data Engineer - Mastercard (Jan 2025 - Present)", expanded=True):
+with st.expander("🔹 Data Engineer | Mastercard", expanded=True):
+    st.markdown("#### Jan 2025 - Present")
     st.markdown("""
-    * **Architecture**: Architected migration from on-prem Oracle to **AWS Cloud**.
-    * **Orchestration**: Deployed incremental ETL pipelines using **Apache Nifi**.
-    * **Optimization**: Processed raw S3 data into **Parquet** via Databricks (Python/Scala).
-    * **Framework**: Established **Medallion Data Architecture** (Bronze/Silver/Gold).
+    - **Cloud Migration**: Architected on-prem Oracle to AWS migration.
+    - **ETL/ELT**: Deployed incremental pipelines using **Apache Nifi**.
+    - **Optimization**: Optimized S3 data into **Parquet** using Databricks notebooks.
+    - **Architecture**: Implemented **Medallion Architecture** (Bronze/Silver/Gold).
     """)
 
 # EY
-with st.expander("🔹 Data Engineer - Ernst & Young (Nov 2023 - Jan 2025)"):
+with st.expander("🔹 Data Engineer | Ernst & Young"):
+    st.markdown("#### Nov 2023 - Jan 2025")
     st.markdown("""
-    * **Snowflake**: Implemented solutions for structured and semi-structured data (JSON, XML).
-    * **Automation**: Used **Snowpipe** for automated, incremental data loading.
-    * **BI**: Delivered Supply Chain insights for a US FMCG client using **Power BI**.
+    - **Warehousing**: Delivered Snowflake solutions for structured and semi-structured data.
+    - **Automation**: Implemented **Snowpipe** for automated ingestion.
+    - **Analytics**: Built Supply Chain dashboards for US FMCG clients using Power BI.
     """)
 
 # TCS
-with st.expander("🔹 Data Engineer - Tata Consultancy Services (Nov 2020 - Oct 2023)"):
+with st.expander("🔹 Data Engineer | Tata Consultancy Services"):
+    st.markdown("#### Nov 2020 - Oct 2023")
     st.markdown("""
-    * **Efficiency**: Reduced ETL cycle time by **30%** using ADF CDC for SAP migration.
-    * **FinOps**: Built Analytics Dashboard using Azure Monitor APIs for cost governance.
-    * **Analytics**: Designed
+    - **Efficiency**: Reduced ETL cycle time by **30%** via ADF CDC for SAP migration.
+    - **Governance**: Built FinOps Analytics Dashboards for cost management.
+    - **Retail Analytics**: Designed competitor insight tools for European retail markets.
+    """)
+
+st.divider()
+
+# --- EDUCATION & CERTIFICATIONS ---
+e1, e2 = st.columns(2)
+
+with e1:
+    st.header("🎓 Education")
+    st.markdown("**B.Tech in Mechanical Engineering**")
+    st.write("Medi-caps University (2016 - 2020)")
+    st.write("CGPA: 7.95")
+
+with e2:
+    st.header("📜 Certifications")
+    st.write("🏆 Snow Pro Core")
+    st.write("🏆 Databricks Data Engineer Associate")
+    st.write("🏆 MS Azure Data Engineer (DP-203)")
+    st.write("🏆 MS Fabric Engineer (DP-600/DP-700)")
+
+st.divider()
+st.markdown("<center>Built with Streamlit | 2026</center>", unsafe_allow_html=True)
