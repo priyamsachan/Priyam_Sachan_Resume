@@ -1,132 +1,109 @@
 import streamlit as st
 
-# 1. Page Config
+# 1. Page Configuration
 st.set_page_config(
-    page_title="Priyam Sachan | Data Engineer Portfolio",
-    page_icon="📊",
-    layout="wide"
+    page_title="Priyam Sachan | Senior Data Engineer",
+    page_icon="🏙️",
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
-# 2. Robust CSS for Background and Glassmorphism
+# 2. Advanced Professional Styling (CSS)
 st.markdown("""
     <style>
-    /* Gradient Background */
+    /* Global Styles */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+    
+    html, body, [class*="css"] {
+        font-family: 'Inter', sans-serif;
+    }
+
     .stApp {
-        background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #334155 100%);
-        color: #e2e8f0;
+        background: radial-gradient(circle at top left, #0f172a, #1e293b);
+        color: #f1f5f9;
+    }
+
+    /* Professional Card Styling */
+    .res-card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 25px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
     }
     
-    /* Card Styling */
-    div.stExpander {
-        background-color: rgba(255, 255, 255, 0.05) !important;
-        border: 1px solid rgba(255, 255, 255, 0.1) !important;
-        border-radius: 10px !important;
-        margin-bottom: 10px;
+    .res-card:hover {
+        border-color: #38bdf8;
+        background: rgba(56, 189, 248, 0.05);
     }
 
-    /* Custom Header Colors */
-    h1, h2, h3 {
-        color: #60a5fa !important;
+    /* Skill Badge Styling */
+    .skill-badge {
+        display: inline-block;
+        padding: 5px 14px;
+        border-radius: 8px;
+        background: #0ea5e9;
+        color: white;
+        margin: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
     }
 
-    /* Text color fix for clarity */
-    .stMarkdown p {
-        color: #cbd5e1;
+    /* Section Headers */
+    h1, h2 {
+        background: linear-gradient(to right, #38bdf8, #818cf8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
     }
 
-    /* Sidebar color */
-    section[data-testid="stSidebar"] {
-        background-color: rgba(15, 23, 42, 0.8);
+    /* Custom Divider */
+    hr {
+        margin: 2em 0;
+        border: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
     </style>
     """, unsafe_allow_html=True)
 
-# --- SIDEBAR ---
+# --- SIDEBAR (Contact & Links) ---
 with st.sidebar:
-    st.image("https://cdn-icons-png.flaticon.com/512/1055/1055644.png", width=100)
-    st.title("Contact Me")
+    st.image("https://cdn-icons-png.flaticon.com/512/3242/3242257.png", width=120)
+    st.title("Priyam Sachan")
+    st.markdown("📍 **Greater Noida, India**")
+    
+    st.markdown("### Let's Connect")
     st.write("📧 [priyamsachan12051997@gmail.com](mailto:priyamsachan12051997@gmail.com)")
-    st.write("📞 +91 8840750905")
-    st.write("🔗 [LinkedIn](https://linkedin.com/in/priyam-sachan)")
+    st.write("🔗 [LinkedIn Profile](https://linkedin.com/in/priyam-sachan)")
+    st.write("🐙 [GitHub Portfolio](https://github.com)")
+    
     st.divider()
-    st.info("Available for Data Engineering opportunities.")
+    st.download_button(
+        label="📄 Download Official CV",
+        data="Binary Content Here",
+        file_name="Priyam_Sachan_DataEngineer.pdf",
+        mime="application/pdf"
+    )
 
-# --- MAIN CONTENT ---
-col1, col2 = st.columns([3, 1])
-
-with col1:
-    st.title("PRIYAM SACHAN")
-    st.subheader("Senior Data Engineer")
-    st.write("Expertise in Cloud Migration, Big Data ETL, and Medallion Architectures.")
-
-# --- SKILLS SECTION ---
-st.header("🛠️ Technical Expertise")
-s1, s2, s3 = st.columns(3)
-
-with s1:
-    st.markdown("### Languages")
-    st.write("Python, SQL, PySpark, Scala")
-    st.markdown("### Databases")
-    st.write("MySQL, SQL Server, CosmosDB, S3, ADLS")
-
-with s2:
-    st.markdown("### Cloud & Big Data")
-    st.write("Azure (ADF, Databricks, Synapse, Fabric), Snowflake, Snowpark, AWS")
-
-with s3:
-    st.markdown("### BI & Tools")
-    st.write("Power BI, Git, JIRA, Generative AI, Prompt Engineering")
-
-st.divider()
-
-# --- WORK EXPERIENCE ---
-st.header("💼 Professional Experience")
-
-# Mastercard
-with st.expander("🔹 Data Engineer | Mastercard", expanded=True):
-    st.markdown("#### Jan 2025 - Present")
+# --- MAIN HERO SECTION ---
+c1, c2 = st.columns([3, 1])
+with c1:
+    st.title("Senior Data Engineer")
     st.markdown("""
-    - **Cloud Migration**: Architected on-prem Oracle to AWS migration.
-    - **ETL/ELT**: Deployed incremental pipelines using **Apache Nifi**.
-    - **Optimization**: Optimized S3 data into **Parquet** using Databricks notebooks.
-    - **Architecture**: Implemented **Medallion Architecture** (Bronze/Silver/Gold).
+        **Bridging the gap between raw data and business intelligence.** Specializing in building high-performance data lakes, automated ETL/ELT pipelines, 
+        and cloud-native architectures for global enterprises like Mastercard and EY.
     """)
 
-# EY
-with st.expander("🔹 Data Engineer | Ernst & Young"):
-    st.markdown("#### Nov 2023 - Jan 2025")
-    st.markdown("""
-    - **Warehousing**: Delivered Snowflake solutions for structured and semi-structured data.
-    - **Automation**: Implemented **Snowpipe** for automated ingestion.
-    - **Analytics**: Built Supply Chain dashboards for US FMCG clients using Power BI.
-    """)
+# --- TECHNICAL ECOSYSTEM ---
+st.write("## 🛠️ Technical Ecosystem")
+col_a, col_b, col_c = st.columns(3)
 
-# TCS
-with st.expander("🔹 Data Engineer | Tata Consultancy Services"):
-    st.markdown("#### Nov 2020 - Oct 2023")
-    st.markdown("""
-    - **Efficiency**: Reduced ETL cycle time by **30%** via ADF CDC for SAP migration.
-    - **Governance**: Built FinOps Analytics Dashboards for cost management.
-    - **Retail Analytics**: Designed competitor insight tools for European retail markets.
-    """)
+def create_skill_html(skills):
+    badges = "".join([f'<span class="skill-badge">{s}</span>' for s in skills])
+    return f"<div>{badges}</div>"
 
-st.divider()
-
-# --- EDUCATION & CERTIFICATIONS ---
-e1, e2 = st.columns(2)
-
-with e1:
-    st.header("🎓 Education")
-    st.markdown("**B.Tech in Mechanical Engineering**")
-    st.write("Medi-caps University (2016 - 2020)")
-    st.write("CGPA: 7.95")
-
-with e2:
-    st.header("📜 Certifications")
-    st.write("🏆 Snow Pro Core")
-    st.write("🏆 Databricks Data Engineer Associate")
-    st.write("🏆 MS Azure Data Engineer (DP-203)")
-    st.write("🏆 MS Fabric Engineer (DP-600/DP-700)")
-
-st.divider()
-st.markdown("<center>Built with Streamlit | 2026</center>", unsafe_allow_html=True)
+with col_a:
+    st.markdown("### 💻 Engineering")
+    st.markdown(create_skill_html(["Python", "SQL", "PySpark", "Scala
