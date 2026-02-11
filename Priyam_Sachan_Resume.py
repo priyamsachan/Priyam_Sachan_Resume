@@ -85,13 +85,12 @@ st.markdown("""
 with st.sidebar:
     st.image("https://cdn-icons-png.flaticon.com/512/3242/3242257.png", width=120)
     st.title("Priyam Sachan")
-    st.markdown("### 📍 Pune, India")
     st.write("📞 [+91 8840750905](tel:+918840750905)")
     st.write("📧 [priyamsachan12051997@gmail.com](mailto:priyamsachan12051997@gmail.com)")
     st.write("🔗 [LinkedIn Profile](https://linkedin.com/in/priyam-sachan)")
     
     st.divider()
-    st.markdown("#### 💡 Leadership")
+    st.markdown("##### 💡 Leadership")
     st.caption("Strategic Thinking • Mentorship • Technical Collaboration")
     
     st.divider()
@@ -101,8 +100,8 @@ with st.sidebar:
 st.title("Senior Data Engineer")
 st.write("### Building the backbone of modern data intelligence.")
 st.markdown("""
-Expert in architecting end-to-end data ecosystems. I specialize in cloud migrations[cite: 15, 31], 
-Medallion Data Lakehouses [cite: 18], and high-performance ETL/ELT orchestration[cite: 16, 25, 32].
+Expert in architecting end-to-end data ecosystems. I specialize in cloud migrations, 
+Medallion Data Lakehouses, and high-performance ETL/ELT orchestration.
 """)
 
 # --- SKILL GRID ---
