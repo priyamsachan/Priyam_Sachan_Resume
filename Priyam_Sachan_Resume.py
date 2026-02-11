@@ -83,7 +83,7 @@ st.markdown("""
 
 # --- SIDEBAR ---
 with st.sidebar:
-    st.image("https://cdn-icons-png.flaticon.com/512/3242/3242257.png", width=120)
+    st.image("https://sl.bing.net/ivxXnZMY096", width=120)
     st.title("Priyam Sachan")
     st.write("📞 [+91 8840750905](tel:+918840750905)")
     st.write("📧 [priyamsachan12051997@gmail.com](mailto:priyamsachan12051997@gmail.com)")
