@@ -77,7 +77,7 @@ st.markdown("""
     [data-testid="stSidebar"] {
         background-color: #0b0f19;
         border-right: 1px solid rgba(255, 255, 255, 0.05);
-        max-width: 340px !important;
+        min-width: 340px !important;
     }
     </style>
     """, unsafe_allow_html=True)
