@@ -83,7 +83,7 @@ st.markdown("""
 
 # --- SIDEBAR ---
 with st.sidebar:
-    st.image("Priyam.jpeg", width=120)
+    st.image("Priyam.jpeg", width=150)
     st.title("Priyam Sachan")
     st.write("📞 [+91 8840750905](tel:+918840750905)")
     st.write("📧 [priyamsachan12051997@gmail.com](mailto:priyamsachan12051997@gmail.com)")
@@ -91,7 +91,9 @@ with st.sidebar:
     
     st.divider()
     st.write("## 💡 Leadership")
-    st.markdown("## Strategic Thinking • Mentorship • Technical Collaboration")
+    st.markdown("## Strategic Thinking, 
+    Mentorship, 
+    Technical Collaboration")
     
     st.divider()
     st.download_button("📂 Get Official Resume", "PDF_DATA", file_name="Priyam_Sachan_Resume.pdf", use_container_width=True)
