@@ -85,12 +85,12 @@ st.markdown("""
 with st.sidebar:
     st.image("Priyam.jpeg", width=150)
     st.title("Priyam Sachan")
-    st.write("📞 [+91 8840750905](tel:+918840750905)")
-    st.write("📧 [priyamsachan12051997@gmail.com](mailto:priyamsachan12051997@gmail.com)")
-    st.write("🔗 [LinkedIn Profile](https://linkedin.com/in/priyam-sachan)")
+    st.write("📞[+91 8840750905](tel:+918840750905)")
+    st.write("📧[priyamsachan12051997@gmail.com](mailto:priyamsachan12051997@gmail.com)")
+    st.write("🔗[LinkedIn Profile](https://linkedin.com/in/priyam-sachan)")
     
     st.divider()
-    st.title("## 💡 Leadership")
+    st.title("💡 Leadership")
     st.markdown("## Strategic Thinking, Mentorship, Technical Collaboration")
     
     st.divider()
